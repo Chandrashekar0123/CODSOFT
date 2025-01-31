@@ -78,21 +78,15 @@ To run this project locally, follow these steps:
 
 Clone the repository:
 
-bash
-Copy
-Edit
+
 git clone https://github.com/your-username/imdb-rating-prediction.git
 Install the required dependencies:
 
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 Open the Jupyter notebook and explore the project:
 
-bash
-Copy
-Edit
+
 jupyter notebook
 Contributing
 Feel free to fork the repository, contribute improvements, or suggest new features. All contributions are welcome!
