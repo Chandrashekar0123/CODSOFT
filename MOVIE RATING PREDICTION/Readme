@@ -6,7 +6,7 @@ Overview
 This project leverages machine learning techniques to predict IMDb ratings for Indian movies. The dataset includes various movie attributes such as genre, director, actors, and votes. By building several models, we aim to provide insights into how these features influence movie ratings.
 
 Dataset Link:
-IMDb India Movies Dataset
+IMDb India Movies Dataset : https://www.kaggle.com/datasets/adrianmcmahon/imdb-india-movies
 Key Features of the Project
 1. Data Preprocessing:
 Cleaning: Handle missing data and transform data types.
