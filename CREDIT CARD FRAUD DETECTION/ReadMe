@@ -1,105 +1,144 @@
+# Credit Card Fraud Detection with Machine Learning
 
-Credit Card Fraud Detection with Machine Learning
 Predicting fraudulent credit card transactions using machine learning models.
 
-Overview
+## Overview
 In this project, machine learning models are used to predict fraudulent transactions in credit card data. The dataset is highly imbalanced, making the problem more challenging. The goal is to detect fraud while minimizing false positives, and the approach includes preprocessing, class balancing, model optimization, and evaluation of performance using various machine learning algorithms.
 
-Dataset Link  
-https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
-Credit Card Fraud Detection Dataset: Kaggle Dataset
+## Dataset Link
+Credit Card Fraud Detection Dataset: [Kaggle Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 
-Key Features of the Project
-1. Data Preprocessing:
-Handling Missing Values: Imputation techniques were applied to fill any missing values.
-Feature Engineering: We created meaningful features, such as transaction frequency, time-based features, and rolling averages of transaction amounts.
-Class Imbalance Handling: SMOTE (Synthetic Minority Over-sampling Technique) was applied to balance the dataset, along with Cluster-based SMOTE for better representation.
-Outlier Detection: Anomaly detection techniques like Isolation Forest and DBSCAN were used to remove outliers and ensure cleaner data.
-2. Machine Learning Models Used:
-Logistic Regression
-A simple and fast model, used for binary classification.
-Performance:
-Accuracy: 100%
-Precision: 89%
-Recall: 57%
-F1-Score: 70%
-Observation: The model shows good precision but struggles to catch all fraudulent transactions, as reflected in the lower recall.
-Support Vector Machine (SVM)
-A more complex model, effective for handling non-linear decision boundaries.
-Performance:
-Accuracy: 100%
-Precision: 86%
-Recall: 64%
-F1-Score: 73%
-Observation: SVM slightly improves recall compared to Logistic Regression, catching more fraudulent transactions while maintaining a high precision.
-K-Nearest Neighbors (KNN)
-A distance-based model that predicts based on the nearest neighbors' behavior.
-Performance:
-Accuracy: 100%
-Precision: 96%
-Recall: 79%
-F1-Score: 86%
-Observation: KNN outperforms all other models in recall, making it ideal for detecting fraudulent transactions. However, precision is slightly compromised.
-Random Forest Classifier
-An ensemble learning model that combines multiple decision trees for more robust predictions.
-Performance:
-Accuracy: 100%
-Precision: 95%
-Recall: 64%
-F1-Score: 77%
-Observation: Random Forest strikes a balance between precision and recall, but recall could be improved further to better catch fraud.
-Decision Tree Classifier
-A simpler model based on binary decisions, splitting data into nodes to classify.
-Performance:
-Accuracy: 100%
-Precision: 95%
-Recall: 64%
-F1-Score: 77%
-Observation: Similar performance to Random Forest, but may suffer from overfitting on training data.
-XGBoost / LightGBM
-Advanced boosting techniques that optimize decision trees and handle imbalanced data well.
-Performance:
-Accuracy: 100%
-Precision: 97%
-Recall: 78%
-F1-Score: 87%
-Observation: XGBoost and LightGBM provide superior performance over other models in terms of both precision and recall, making them the best models for fraud detection.
-3. Feature Engineering:
-Transaction Frequency: Captured the frequency of transactions for each user, adding an insightful feature.
-Time-based Features: Created features like the time of day, transaction intervals, and historical averages to understand user behavior.
-Rolling Average of Transaction Amount: Used rolling averages to capture trends and anomalies in a user’s spending behavior.
-4. Data Visualization:
-Visualized the model predictions against actual values, providing clear insights into how well each model performed.
-ROC Curve: Used to evaluate model performance, especially with respect to false positives and false negatives.
-Confusion Matrix: Helped in understanding how well the model distinguished between fraudulent and non-fraudulent transactions.
-Model Performance Breakdown
+## Key Features of the Project
+### 1. Data Preprocessing:
+- **Handling Missing Values**: Imputation techniques were applied to fill any missing values.
+- **Feature Engineering**: We created meaningful features, such as transaction frequency, time-based features, and rolling averages of transaction amounts.
+- **Class Imbalance Handling**: SMOTE (Synthetic Minority Over-sampling Technique) was applied to balance the dataset, along with **Cluster-based SMOTE** for better representation.
+- **Outlier Detection**: Anomaly detection techniques like Isolation Forest and DBSCAN were used to remove outliers and ensure cleaner data.
+
+### 2. Machine Learning Models Used:
+#### **Logistic Regression**
+- A simple and fast model, used for binary classification.
+- **Performance**:
+  - **Accuracy**: 100%
+  - **Precision**: 89%
+  - **Recall**: 57%
+  - **F1-Score**: 70%
+- **Observation**: The model shows good precision but struggles to catch all fraudulent transactions, as reflected in the lower recall.
+
+#### **Support Vector Machine (SVM)**
+- A more complex model, effective for handling non-linear decision boundaries.
+- **Performance**:
+  - **Accuracy**: 100%
+  - **Precision**: 86%
+  - **Recall**: 64%
+  - **F1-Score**: 73%
+- **Observation**: SVM slightly improves recall compared to Logistic Regression, catching more fraudulent transactions while maintaining a high precision.
+
+#### **K-Nearest Neighbors (KNN)**
+- A distance-based model that predicts based on the nearest neighbors' behavior.
+- **Performance**:
+  - **Accuracy**: 100%
+  - **Precision**: 96%
+  - **Recall**: 79%
+  - **F1-Score**: 86%
+- **Observation**: KNN outperforms all other models in **recall**, making it ideal for detecting fraudulent transactions. However, precision is slightly compromised.
+
+#### **Random Forest Classifier**
+- An ensemble learning model that combines multiple decision trees for more robust predictions.
+- **Performance**:
+  - **Accuracy**: 100%
+  - **Precision**: 95%
+  - **Recall**: 64%
+  - **F1-Score**: 77%
+- **Observation**: Random Forest strikes a balance between precision and recall, but recall could be improved further to better catch fraud.
+
+#### **Decision Tree Classifier**
+- A simpler model based on binary decisions, splitting data into nodes to classify.
+- **Performance**:
+  - **Accuracy**: 100%
+  - **Precision**: 95%
+  - **Recall**: 64%
+  - **F1-Score**: 77%
+- **Observation**: Similar performance to Random Forest, but may suffer from overfitting on training data.
+
+#### **XGBoost / LightGBM**
+- Advanced boosting techniques that optimize decision trees and handle imbalanced data well.
+- **Performance**:
+  - **Accuracy**: 100%
+  - **Precision**: 97%
+  - **Recall**: 78%
+  - **F1-Score**: 87%
+- **Observation**: XGBoost and LightGBM provide superior performance over other models in terms of both **precision** and **recall**, making them the best models for fraud detection.
+
+### 3. Feature Engineering:
+- **Transaction Frequency**: Captured the frequency of transactions for each user, adding an insightful feature.
+- **Time-based Features**: Created features like the time of day, transaction intervals, and historical averages to understand user behavior.
+- **Rolling Average of Transaction Amount**: Used rolling averages to capture trends and anomalies in a user’s spending behavior.
+
+### 4. Data Visualization:
+- Visualized the model predictions against actual values, providing clear insights into how well each model performed.
+- **ROC Curve**: Used to evaluate model performance, especially with respect to false positives and false negatives.
+- **Confusion Matrix**: Helped in understanding how well the model distinguished between fraudulent and non-fraudulent transactions.
+
+## Model Performance Breakdown
+
 Here’s a quick comparison of the performance metrics for all models:
 
-Model	Accuracy	Precision	Recall	F1-Score
-Logistic Regression	100%	89%	57%	70%
-Support Vector Machine	100%	86%	64%	73%
-K-Nearest Neighbors (KNN)	100%	96%	79%	86%
-Random Forest Classifier	100%	95%	64%	77%
-Decision Tree Classifier	100%	95%	64%	77%
-XGBoost / LightGBM	100%	97%	78%	87%
-Key Insights:
-KNN: Outstanding recall, ideal for detecting fraud at the cost of a small drop in precision.
-XGBoost / LightGBM: The top performers, offering the best balance between precision and recall, making them the go-to models for fraud detection.
-Logistic Regression: Fast and simple, but less effective in catching fraud (lower recall).
-Random Forest: Balances precision and recall, offering strong performance but with room for improvement.
-Technologies Used
-Python Libraries:
-Pandas: Data manipulation and preprocessing.
-NumPy: Numerical operations.
-Scikit-learn: Building and evaluating machine learning models.
-XGBoost: Advanced gradient boosting for better prediction.
-LightGBM: Fast and efficient gradient boosting.
-Matplotlib & Seaborn: Data visualization.
-Tools:
-Jupyter Notebook: Interactive environment for analysis.
-Future Improvements
-Hyperparameter Tuning: Further optimization of models using Grid Search, Random Search, or Bayesian Optimization to maximize performance.
-Deep Learning: Experimenting with deep learning-based anomaly detection or autoencoders to improve accuracy.
-Real-Time Prediction: Deploying the model in a production environment for real-time fraud detection via APIs.
-Conclusion
+| Model                     | Accuracy | Precision | Recall | F1-Score |
+|---------------------------|----------|-----------|--------|----------|
+| Logistic Regression        | 100%     | 89%       | 57%    | 70%      |
+| Support Vector Machine     | 100%     | 86%       | 64%    | 73%      |
+| K-Nearest Neighbors (KNN)  | 100%     | 96%       | 79%    | 86%      |
+| Random Forest Classifier   | 100%     | 95%       | 64%    | 77%      |
+| Decision Tree Classifier   | 100%     | 95%       | 64%    | 77%      |
+| XGBoost / LightGBM         | 100%     | 97%       | 78%    | 87%      |
+
+### Key Insights:
+- **KNN**: Outstanding recall, ideal for detecting fraud at the cost of a small drop in precision.
+- **XGBoost / LightGBM**: The top performers, offering the best balance between precision and recall, making them the go-to models for fraud detection.
+- **Logistic Regression**: Fast and simple, but less effective in catching fraud (lower recall).
+- **Random Forest**: Balances precision and recall, offering strong performance but with room for improvement.
+
+## Technologies Used
+### Python Libraries:
+- **Pandas**: Data manipulation and preprocessing.
+- **NumPy**: Numerical operations.
+- **Scikit-learn**: Building and evaluating machine learning models.
+- **XGBoost**: Advanced gradient boosting for better prediction.
+- **LightGBM**: Fast and efficient gradient boosting.
+- **Matplotlib & Seaborn**: Data visualization.
+
+### Tools:
+- **Jupyter Notebook**: Interactive environment for analysis.
+
+## Future Improvements
+- **Hyperparameter Tuning**: Further optimization of models using Grid Search, Random Search, or Bayesian Optimization to maximize performance.
+- **Deep Learning**: Experimenting with deep learning-based anomaly detection or autoencoders to improve accuracy.
+- **Real-Time Prediction**: Deploying the model in a production environment for real-time fraud detection via APIs.
+
+## Conclusion
 This project demonstrates how machine learning models, especially ensemble methods like XGBoost and LightGBM, can be used to effectively detect fraudulent transactions. By balancing precision and recall, we can improve fraud detection accuracy and reduce the risk of financial loss.
+
+## Getting Started
+To run this project locally, follow these steps:
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/credit-card-fraud-detection.git
+    ```
+
+2. **Install the required dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. **Open the Jupyter notebook and explore the project**:
+    ```bash
+    jupyter notebook
+    ```
+
+## Contributing
+Feel free to fork the repository, contribute improvements, or suggest new features. All contributions are welcome!
+
+- **GitHub**: https://github.com/Chandrashekar0123/CODSOFT
+- **LinkedIn**: https://www.linkedin.com/in/chandra-shekar-344793287/
