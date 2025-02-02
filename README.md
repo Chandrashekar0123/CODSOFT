@@ -20,8 +20,7 @@ This repository contains multiple data science projects demonstrating the applic
 6. [Installation](#installation)
 7. [Usage](#usage)
 8. [Contributing](#contributing)
-9. [License](#license)
-10. [Acknowledgements](#acknowledgements)
+9. [Acknowledgements](#acknowledgements)
 
 ---
 
