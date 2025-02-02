@@ -132,7 +132,7 @@ Follow similar commands for other projects:
 Feel free to fork the repository, contribute improvements, or suggest new features. All contributions are welcome!
 
 - **GitHub**: [Your GitHub Profile]((https://github.com/Chandrashekar0123))
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/k-chandra-shekar-reddy-344793287/)
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/k-chandra-shekar-reddy-344793287/)
 
 ---
 
