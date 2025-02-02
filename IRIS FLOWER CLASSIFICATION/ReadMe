@@ -1,6 +1,6 @@
 # 🌸 Iris Flower Classification
 
-![Iris Dataset](https://upload.wikimedia.org/wikipedia/commons/4/41/Iris_versicolor_3.jpg)
+![Iris Dataset](https://www.kaggle.com/datasets/arshid/iris-flower-dataset)
 
 ## 📌 Project Overview
 This project involves **Iris Flower Classification** using multiple machine learning models. The dataset consists of three Iris flower species: **Setosa, Versicolor, and Virginica**. The goal is to classify the species based on sepal and petal dimensions.
@@ -71,7 +71,7 @@ sns.heatmap(cm, annot=True, fmt='d')
 ## 📦 Installation & Usage
 1️⃣ Clone the repository
 ```sh
-git clone https://github.com/yourusername/iris-classification.git
+git clone https://github.com/Chandrashekar0123/CODSOFT/edit/main/IRIS%20FLOWER%20CLASSIFICATION
 cd iris-classification
 ```
 2️⃣ Install dependencies
@@ -93,8 +93,8 @@ This project successfully classifies Iris species with 100% accuracy using multi
 
 ---
 
-💻 **Developed by:** _Your Name_  
-📧 Contact: [Your Email]  
-📂 GitHub: [Your Profile Link]
+💻 **Developed by:** K. Chandra Shekar Reddy
+📧 Contact: chandrashekar63707@gmail.com  
+📂 GitHub: https://github.com/Chandrashekar0123
 
 
