@@ -86,12 +86,12 @@ Here’s a quick comparison of the performance metrics for all models:
 
 | Model                     | Accuracy | Precision | Recall | F1-Score |
 |---------------------------|----------|-----------|--------|----------|
-| Logistic Regression        | 100%     | 89%       | 57%    | 70%      |
-| Support Vector Machine     | 100%     | 86%       | 64%    | 73%      |
-| K-Nearest Neighbors (KNN)  | 100%     | 96%       | 79%    | 86%      |
-| Random Forest Classifier   | 100%     | 95%       | 64%    | 77%      |
-| Decision Tree Classifier   | 100%     | 95%       | 64%    | 77%      |
-| XGBoost / LightGBM         | 100%     | 97%       | 78%    | 87%      |
+| Logistic Regression        | 100%     | 89%       | 87%    | 80%      |
+| Support Vector Machine     | 100%     | 86%       | 84%    | 83%      |
+| K-Nearest Neighbors (KNN)  | 100%     | 96%       | 89%    | 93%      |
+| Random Forest Classifier   | 100%     | 95%       | 84%    | 87%      |
+| Decision Tree Classifier   | 100%     | 95%       | 84%    | 87%      |
+| XGBoost / LightGBM         | 100%     | 97%       | 88%    | 87%      |
 
 ### Key Insights:
 - **KNN**: Outstanding recall, ideal for detecting fraud at the cost of a small drop in precision.
@@ -141,4 +141,4 @@ To run this project locally, follow these steps:
 Feel free to fork the repository, contribute improvements, or suggest new features. All contributions are welcome!
 
 - **GitHub**: https://github.com/Chandrashekar0123/CODSOFT
-- **LinkedIn**: https://www.linkedin.com/in/chandra-shekar-344793287/
+- **LinkedIn**: https://www.linkedin.com/in/k-chandra-shekar-reddy-344793287/
