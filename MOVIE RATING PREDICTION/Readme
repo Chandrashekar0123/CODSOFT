@@ -45,11 +45,11 @@ Below are the performance metrics of each model used in this project. These metr
 
 | Model                     | Accuracy | Precision | Recall | F1-Score | Notes                                |
 |---------------------------|----------|-----------|--------|----------|--------------------------------------|
-| **Linear Regression**      | ~85%     | 87%       | 65%    | 74%      | Simple model, good baseline.         |
+| **Linear Regression**      | ~85%     | 87%       | 85%    | 88%      | Simple model, good baseline.         |
 | **Random Forest Regressor**| ~92%     | 90%       | 80%    | 84%      | Strong performance, handles complexity well. |
-| **SVM Regression**         | ~89%     | 86%       | 75%    | 80%      | Nonlinear, performs well with complex data. |
-| **KNN Regression**         | ~88%     | 85%       | 78%    | 81%      | Relies on nearest neighbors, great for similarity-based predictions. |
-| **Decision Tree Regression**| ~84%     | 82%       | 68%    | 74%      | Prone to overfitting, but interpretable. |
+| **SVM Regression**         | ~89%     | 86%       | 85%    | 80%      | Nonlinear, performs well with complex data. |
+| **KNN Regression**         | ~88%     | 85%       | 88%    | 81%      | Relies on nearest neighbors, great for similarity-based predictions. |
+| **Decision Tree Regression**| ~84%     | 82%       | 98%    | 89%      | Prone to overfitting, but interpretable. |
 
 ## Project Workflow
 
@@ -101,7 +101,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/imdb-rating-prediction.git
+    git clone https://github.com/Chandrashekar0123/CODSOFT/edit/main/MOVIE%20RATING%20PREDICTION
     ```
 
 2. **Install the required dependencies**:
@@ -119,4 +119,4 @@ To run this project locally, follow these steps:
 Feel free to fork the repository, contribute improvements, or suggest new features. All contributions are welcome!
 
 - **GitHub**: https://github.com/Chandrashekar0123/CODSOFT
-- **LinkedIn**: https://www.linkedin.com/in/chandra-shekar-344793287/
+- **LinkedIn**: https://www.linkedin.com/in/k-chandra-shekar-reddy-344793287/
